@@ -1,0 +1,20 @@
+.choice
+{
+  color: white !important;
+  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  border-radius: 5em;
+   
+   
+
+}
+.choice:hover
+{
+  color: black !important; 
+  background-color: transparent;
+}
+.active
+{
+  color: white !important;
+  background:  rgb(0, 0, 0) !important;
+  border-radius: 5em;
+}
