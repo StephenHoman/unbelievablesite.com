@@ -6,9 +6,9 @@
      $yourName = $conn->real_escape_string($_POST['name']);
      $yourEmail = $conn->real_escape_string($_POST['email']);
      $yourPhone = $conn->real_escape_string($_POST['phone']);
-     $comments = $conn->real_escape_string($_POST['message']);
+ 
      $nowFormat = date('Y-m-d H:i:s');
-     $sql="INSERT INTO mailinglist (name, email, phone, message, dateTime) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$comments."','"$nowFormat"')";
+     $sql="INSERT INTO mailinglist (name, email, phone, message ) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$comments."' )";
      if(!$result = $conn->query($sql)){
      die('There was an error running the query [' . $conn->error . ']');
      }
